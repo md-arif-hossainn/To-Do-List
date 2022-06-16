@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/todoListFragment">
+
+    <fragment
+        android:id="@+id/todoListFragment"
+        android:name="com.example.arif.todoapp.TodoListFragment"
+        android:label="Todo List"
+        tools:layout="@layout/fragment_todo_list" >
+        <action
+            android:id="@+id/action_todoListFragment_to_newTodoFragment"
+            app:destination="@id/newTodoFragment" />
+        <action
+            android:id="@+id/action_todoListFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_todoListFragment_to_validationFragment"
+            app:destination="@id/validationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newTodoFragment"
+        android:name="com.example.arif.todoapp.NewTodoFragment"
+        android:label="New Todo"
+        tools:layout="@layout/fragment_new_todo" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.arif.todoapp.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/validationFragment"
+        android:name="com.tanvir.training.todoappbatch04.ValidationFragment"
+        android:label="fragment_validation"
+        tools:layout="@layout/fragment_validation" />
+</navigation>

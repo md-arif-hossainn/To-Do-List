@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TodoApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="new_user">New User?</string>
+    <string name="register">Register</string>
+    <string name="logout">Logout</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="show_only_completed">Show Completed</string>
+    <string name="show_incompleted">Show incompleted</string>
+    <string name="show_all">Show All</string>
+    <string name="search_todo">Search Todo</string>
+</resources>

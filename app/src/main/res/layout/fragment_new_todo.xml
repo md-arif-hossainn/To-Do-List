@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp"
+        tools:context=".NewTodoFragment">
+
+
+        <EditText
+            android:id="@+id/todoNameInputET"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/edit_background"
+            android:drawablePadding="10dp"
+            android:hint="what to do?"
+            android:paddingLeft="15dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="25dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Select Priority" />
+
+        <RadioGroup
+            android:id="@+id/priorityRG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <RadioButton
+                android:id="@+id/lowRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Low" />
+
+            <RadioButton
+                android:id="@+id/normalRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Normal" />
+
+            <RadioButton
+                android:id="@+id/highRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="High" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/dateBtn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="select date"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/dateTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="17/04/2022" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/timeBtn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="select time"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/timeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="10:30" />
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/saveBtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_button_1"
+            android:text="save"
+            android:textAllCaps="false"
+            android:textColor="#FFF" />
+
+    </LinearLayout>
+</layout>

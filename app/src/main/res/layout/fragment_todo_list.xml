@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".TodoListFragment">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/cbToolbar"
+            style="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#26B7B2">
+
+            <RadioGroup
+                android:id="@+id/cbLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <RadioButton
+                    android:id="@+id/lowCB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Low" />
+
+                <RadioButton
+                    android:id="@+id/normalCB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Normal" />
+
+                <RadioButton
+                    android:id="@+id/highCB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="High" />
+
+                <RadioButton
+                    android:id="@+id/allCB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="All" />
+            </RadioGroup>
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/todoRV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cbToolbar"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/newTodoFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="16dp"
+            android:src="@android:drawable/ic_input_add"
+            android:focusable="true" />
+    </RelativeLayout>
+</layout>
